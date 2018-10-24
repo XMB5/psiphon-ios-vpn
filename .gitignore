@@ -49,7 +49,7 @@ Pods
 # fastlane screenshots
 screenshots
 
-psiphon_config
-embedded_server_entries
-Bourbon-Oblique.otf
-transifex_conf.json
+#psiphon_config
+#embedded_server_entries
+#Bourbon-Oblique.otf
+#transifex_conf.json
