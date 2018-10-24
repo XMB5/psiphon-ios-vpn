@@ -5,10 +5,11 @@
   `sudo gem install cocoapods`
 
 ### Building
-- Replace `Shared/psiphon_config.stub` with your configuration file.
-- Replace `Shared/embedded_server_entries.stub` with your server entries file.
-- Replace `Psiphon/Bourbon-Oblique.otf` with the "Psiphon" font file.
 - Run `pod install` to install the third-party libraries.
+- Copy `Psiphon/UntrustedWifiNetworks-example.h` to 
+`Psiphon/UntrustedWifiNetworks.h` and add untrusted wifi networks to it
+- Proper code signing is disabled by default, if you are using an 
+unjailbroken deivce you will need to enable it
 
 ## I18n/L10n
 
