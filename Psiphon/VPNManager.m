@@ -693,11 +693,17 @@ PsiFeedbackLogType const VPNManagerLogType = @"VPNManager";
           // setEnabled becomes false if the user changes the
           // enabled VPN Configuration from the preferences.
           providerManager.enabled = TRUE;
-
-          // Adds "always connect" Connect On Demand rule to the configuration.
+          
+          #import "UntrustedWifiNetworks.h"
+          
+          // Adds Connect On Demand rules to the configuration.
           if (!providerManager.onDemandRules || [providerManager.onDemandRules count] == 0) {
-              NEOnDemandRule *alwaysConnectRule = [NEOnDemandRuleConnect new];
-              providerManager.onDemandRules = @[alwaysConnectRule];
+              NEOnDemandRule *untrustedConnectRule = [NEOnDemandRuleConnect new];
+              untrustedConnectRule.SSIDMatch = untrustedWifiNetworks;
+              
+              NEOnDemandRule *disconnectDefaultRule = [NEOnDemandRuleDisconnect new];
+              
+              providerManager.onDemandRules = @[untrustedConnectRule, disconnectDefaultRule];
           }
 
           // Enables Connect On Demand for all users.

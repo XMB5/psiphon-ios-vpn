@@ -214,6 +214,7 @@
 
 /* Begin PBXFileReference section */
 		01122727D6CE50B340C55DBE /* libPods-PsiphonVPN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PsiphonVPN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2288A1FC2181265600EB97D8 /* UntrustedWifiNetworks-example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UntrustedWifiNetworks-example.h"; sourceTree = "<group>"; };
 		440D75BD1F59E041005C603B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4435CC251F70566000F3A809 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		4435CC261F70566000F3A809 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
@@ -875,6 +876,7 @@
 				9BFECE69F71F11C7B3A2D67E /* UIColor+Additions.h */,
 				9BFECBF5A83176EA09316CB4 /* SwoopView.m */,
 				9BFEC355C70611AF985FB4D9 /* SwoopView.h */,
+				2288A1FC2181265600EB97D8 /* UntrustedWifiNetworks-example.h */,
 			);
 			path = Psiphon;
 			sourceTree = "<group>";
