@@ -71,10 +71,7 @@
 }
 
 - (BOOL)hasActiveSpeedBoostPurchase {
-    if (self.activeSpeedBoostPurchase != nil && [[NSDate date] before:self.activeSpeedBoostPurchase.localTimeExpiry]) {
-        return TRUE;
-    }
-    return FALSE;
+    return TRUE;
 }
 
 - (int)minutesOfSpeedBoostRemaining {
@@ -87,7 +84,7 @@
 }
 
 - (BOOL)hasAuthPackage {
-    return self.authPackage != nil;
+    return TRUE;
 }
 
 #pragma mark - NSCopying protocol
