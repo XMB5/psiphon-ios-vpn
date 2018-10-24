@@ -56,11 +56,11 @@ PsiFeedbackLogType const AdManagerLogType = @"AdManager";
 
 #pragma mark - Ad IDs
 
-NSString * const GoogleAdMobAppID = @"ca-app-pub-1072041961750291~2085686375";
+NSString * const GoogleAdMobAppID = @"ca-app-pub-8164917591047184~1856294822";
 
-NSString * const UntunneledAdMobInterstitialAdUnitID = @"ca-app-pub-1072041961750291/8751062454";
-NSString * const UntunneledAdMobRewardedVideoAdUnitID = @"ca-app-pub-1072041961750291/8356247142";
-NSString * const MoPubTunneledRewardVideoAdUnitID    = @"b9440504384740a2a3913a3d1b6db80e";
+NSString * const UntunneledAdMobInterstitialAdUnitID = @"ca-app-pub-2682351462739023/4816222309";
+NSString * const UntunneledAdMobRewardedVideoAdUnitID = @"ca-app-pub-2675846204993245/4172694770";
+NSString * const MoPubTunneledRewardVideoAdUnitID    = @"b2d8d850e11e3005bd592d3e729afb39";
 
 // AdControllerTag values must be unique.
 AdControllerTag const AdControllerTagUntunneledInterstitial = @"UntunneledInterstitial";
@@ -276,7 +276,7 @@ typedef NS_ENUM(NSInteger, AdLoadAction) {
     // consent is collected. Otherwise terminates with an error.
     RACSignal<RACUnit *> *adSDKInitConsent = [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
         dispatch_async_main(^{
-          [AdMobConsent collectConsentForPublisherID:@"pub-1072041961750291"
+          [AdMobConsent collectConsentForPublisherID:@"pub-7416444304101828"
             withCompletionHandler:^(NSError *error, PACConsentStatus consentStatus) {
 
                 if (error) {
