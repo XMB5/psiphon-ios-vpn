@@ -35,6 +35,16 @@ DEPENDENCIES:
   - PureLayout (= 3.0.2)
   - ReactiveObjC (from `https://github.com/Psiphon-Inc/ReactiveObjC.git`, commit `97d6af3`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CustomIOSAlertView
+    - Google-Mobile-Ads-SDK
+    - MBProgressHUD
+    - MoPub-AdMob-Adapters
+    - mopub-ios-sdk
+    - PersonalizedAdConsent
+    - PureLayout
+
 EXTERNAL SOURCES:
   InAppSettingsKit:
     :commit: 598c498
@@ -71,4 +81,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: bc41de475cd2f1b4e756c1ee600533dc07654f0d
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.0.beta.2

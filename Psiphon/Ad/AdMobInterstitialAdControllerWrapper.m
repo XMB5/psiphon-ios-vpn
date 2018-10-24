@@ -27,7 +27,7 @@
 #import "Logging.h"
 #import "Asserts.h"
 @import GoogleMobileAds;
-#import <Google-Mobile-Ads-SDK/GoogleMobileAds/GADInterstitial.h>
+//#import <Google-Mobile-Ads-SDK/GoogleMobileAds/GADInterstitial.h>
 
 
 PsiFeedbackLogType const AdMobInterstitialAdControllerWrapperLogType = @"AdMobInterstitialAdControllerWrapper";
