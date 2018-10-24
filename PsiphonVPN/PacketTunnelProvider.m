@@ -520,7 +520,7 @@ typedef NS_ENUM(NSInteger, TunnelProviderState) {
                                       @"StartMethod": [self extensionStartMethodTextDescription],
                                       @"SubscriptionState": [self.subscriptionCheckState textDescription]}];
 
-    if (self.extensionStartMethod == ExtensionStartMethodFromContainer
+    if (true || self.extensionStartMethod == ExtensionStartMethodFromContainer
         || self.extensionStartMethod == ExtensionStartMethodFromCrash
         || [self.subscriptionCheckState isSubscribedOrInProgress]) {
 
